@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Live Cows | Hamba.com</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="stylesheet" href="../styles/live-cows.css">
+
+    <script src="../js/live-cows.js" defer></script>
+    <!-- JavaScript -->
+    <script src="../js/auth.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="../index.html" class="logo">
+                Hamba<span>.com</span>
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="beef-sell.html">
+                    Buy Beef
+                </a>
+
+                <a href="qurbani-share.html">
+                    Qurbani Share
+                </a>
+
+                <a href="live-cows.html" class="active">
+                    Live Cows
+                </a>
+
+                <a href="rent-butcher.html">
+                    Rent Butcher
+                </a>
+
+                <a href="sell-cow.html">
+                    Sell Cow
+                </a>
+
+            </div>
+
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="signup.html" class="signup-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="live-cow-hero">
+
+        <div class="live-cow-hero-content">
+
+            <p class="section-tag">
+                HAMBA LIVE MARKET
+            </p>
+
+            <h1>
+                Find Your Perfect
+                <span>Cow</span>
+            </h1>
+
+            <p>
+                Browse verified cattle from trusted farmers
+                and find the perfect cow for your farm,
+                business or Qurbani.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FILTER ================= -->
+
+    <section class="filter-section">
+
+        <div class="filter-container">
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <input type="text" id="searchInput" placeholder="Search by cow name, breed or location...">
+
+            </div>
+
+
+
+            <!-- BREED FILTER -->
+
+            <select id="breedFilter">
+
+                <option value="all">
+                    All Breeds
+                </option>
+
+            </select>
+
+
+
+            <!-- PRICE SORT -->
+
+            <select id="priceFilter">
+
+                <option value="default">
+                    Sort By Price
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+            </select>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= COW LIST ================= -->
+
+    <section class="live-cows-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="section-tag">
+                    AVAILABLE CATTLE
+                </p>
+
+                <h2>
+                    Live Cow Listings
+                </h2>
+
+            </div>
+
+
+            <p id="cowCount">
+
+                0 Cows Found
+
+            </p>
+
+        </div>
+
+
+
+        <!-- COW GRID -->
+
+        <div class="cow-grid" id="cowGrid">
+
+        </div>
+
+
+        <!-- EMPTY MESSAGE -->
+
+        <div class="empty-message" id="emptyMessage">
+
+            <h3>
+                No Cows Found
+            </h3>
+
+            <p>
+                Try changing your search or filter.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+</body>
+
+</html>

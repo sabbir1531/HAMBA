@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cow Details | Hamba.com</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="stylesheet"
+          href="../styles/cow-details.css">
+
+    <script src="../js/cow-details.js" defer></script>
+     <!-- JavaScript -->
+    <script src="../js/auth.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="../index.html"
+           class="logo">
+
+            Hamba<span>.com</span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="beef-sell.html">
+                Buy Beef
+            </a>
+
+            <a href="qurbani-share.html">
+                Qurbani Share
+            </a>
+
+            <a href="live-cows.html"
+               class="active">
+
+                Live Cows
+
+            </a>
+
+            <a href="rent-butcher.html">
+                Rent Butcher
+            </a>
+
+            <a href="sell-cow.html">
+                Sell Cow
+            </a>
+
+        </div>
+
+
+        <div class="nav-actions">
+
+            <a href="login.html"
+               class="login-btn">
+
+                Login
+
+            </a>
+
+            <a href="signup.html"
+               class="signup-btn">
+
+                Sign Up
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<section class="cow-details-section">
+
+    <div class="details-container">
+
+
+        <!-- BACK BUTTON -->
+
+        <a href="live-cows.html"
+           class="back-btn">
+
+            ← Back to Live Cows
+
+        </a>
+
+
+        <!-- COW DETAILS -->
+
+        <div id="cowDetails">
+
+            <!-- JavaScript থেকে আসবে -->
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SIMILAR COWS ================= -->
+
+<section class="similar-section">
+
+    <div class="similar-container">
+
+
+        <div class="similar-heading">
+
+            <p class="section-tag">
+
+                MORE OPTIONS
+
+            </p>
+
+            <h2>
+
+                Similar Cows
+
+            </h2>
+
+        </div>
+
+
+        <div id="similarCowGrid"
+             class="similar-cow-grid">
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BUY REQUEST MODAL ================= -->
+
+<div class="request-modal"
+     id="requestModal">
+
+
+    <div class="request-box">
+
+
+        <button class="close-modal"
+                id="closeModal">
+
+            ×
+
+        </button>
+
+
+        <h2>
+
+            Send Buy Request
+
+        </h2>
+
+        <p>
+
+            আপনার তথ্য দিন। Seller আপনার সাথে যোগাযোগ করতে পারবে।
+
+        </p>
+
+
+        <form id="buyRequestForm">
+
+
+            <div class="form-group">
+
+                <label>
+
+                    Your Name
+
+                </label>
+
+                <input type="text"
+                       id="buyerName"
+                       required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+
+                    Phone Number
+
+                </label>
+
+                <input type="tel"
+                       id="buyerPhone"
+                       placeholder="01XXXXXXXXX"
+                       required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+
+                    Your Location
+
+                </label>
+
+                <input type="text"
+                       id="buyerLocation"
+                       placeholder="Example: Dhaka"
+                       required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+
+                    Message
+
+                </label>
+
+                <textarea id="buyerMessage"
+                          rows="4"
+                          placeholder="I am interested in buying this cow..."></textarea>
+
+            </div>
+
+
+            <button type="submit"
+                    class="send-request-btn">
+
+                Send Request
+
+            </button>
+
+
+        </form>
+
+
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>

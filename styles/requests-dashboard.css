@@ -1,0 +1,508 @@
+/* ===============================
+   DASHBOARD HERO
+================================ */
+
+.dashboard-hero {
+
+    padding: 80px 7%;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #2d4a35,
+        #58725e
+    );
+
+    color: white;
+
+}
+
+
+.dashboard-hero h1 {
+
+    font-size: 3rem;
+
+    margin: 15px 0;
+
+}
+
+
+.dashboard-hero p {
+
+    opacity: 0.9;
+
+}
+
+
+/* ===============================
+   DASHBOARD
+================================ */
+
+.dashboard-section {
+
+    padding: 70px 7%;
+
+    background: #f8f7f3;
+
+    min-height: 600px;
+
+}
+
+
+.dashboard-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+/* ===============================
+   TABS
+================================ */
+
+.dashboard-tabs {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+.dashboard-tab {
+
+    padding: 15px 25px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    color: #666;
+
+    position: relative;
+
+}
+
+
+.dashboard-tab.active {
+
+    color: var(--primary);
+
+}
+
+
+.dashboard-tab.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -1px;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 3px;
+
+    background: var(--primary);
+
+}
+
+
+/* ===============================
+   TAB CONTENT
+================================ */
+
+.tab-content {
+
+    display: none;
+
+}
+
+
+.tab-content.active {
+
+    display: block;
+
+}
+
+
+.tab-heading {
+
+    margin-bottom: 30px;
+
+}
+
+
+.tab-heading h2 {
+
+    color: var(--brown);
+
+    margin-bottom: 8px;
+
+}
+
+
+.tab-heading p {
+
+    color: #777;
+
+}
+
+
+/* ===============================
+   REQUEST GRID
+================================ */
+
+.request-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 25px;
+
+}
+
+
+/* ===============================
+   REQUEST CARD
+================================ */
+
+.request-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.request-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 20px;
+
+}
+
+
+.request-top h3 {
+
+    color: #333;
+
+}
+
+
+.request-id {
+
+    font-size: 0.75rem;
+
+    color: #888;
+
+    margin-top: 5px;
+
+}
+
+
+/* ===============================
+   STATUS
+================================ */
+
+.request-status {
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+
+}
+
+
+.status-pending {
+
+    background: #fff3cd;
+
+    color: #8a6d3b;
+
+}
+
+
+.status-accepted {
+
+    background: #d4edda;
+
+    color: #2f7a3d;
+
+}
+
+
+.status-rejected {
+
+    background: #f8d7da;
+
+    color: #9a2d36;
+
+}
+
+
+/* ===============================
+   INFO
+================================ */
+
+.request-info {
+
+    background: #f8f8f8;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.request-info p {
+
+    margin: 7px 0;
+
+    color: #555;
+
+    font-size: 0.92rem;
+
+}
+
+
+.request-message {
+
+    padding: 15px;
+
+    background: #fff8ed;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.request-message h4 {
+
+    margin-bottom: 7px;
+
+}
+
+
+/* ===============================
+   ACTION BUTTONS
+================================ */
+
+.request-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.accept-btn,
+.reject-btn,
+.delete-btn {
+
+    flex: 1;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.accept-btn {
+
+    background: var(--green);
+
+    color: white;
+
+}
+
+
+.reject-btn {
+
+    background: #d9534f;
+
+    color: white;
+
+}
+
+
+.delete-btn {
+
+    background: #eee;
+
+    color: #444;
+
+}
+
+
+/* ===============================
+   EMPTY
+================================ */
+
+.empty-request {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+}
+
+
+.empty-request h3 {
+
+    font-size: 1.7rem;
+
+    margin-bottom: 10px;
+
+}
+
+
+.empty-request p {
+
+    color: #777;
+
+    margin-bottom: 25px;
+
+}
+
+
+.browse-btn {
+
+    display: inline-block;
+
+    background: var(--primary);
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+
+    .dashboard-tabs {
+
+        flex-direction: column;
+
+        border-bottom: none;
+
+    }
+
+
+    .request-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .request-actions {
+
+        flex-direction: column;
+
+    }
+
+}
+/* ===============================
+   DEMO USER SWITCHER
+================================ */
+
+.demo-user-switcher {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    color: white;
+
+    font-size: 14px;
+
+}
+
+
+.demo-user-switcher select {
+
+    padding: 9px 14px;
+
+    border-radius: 8px;
+
+    border: 1px solid #d6a86d;
+
+    background: white;
+
+    color: #333;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    outline: none;
+
+}

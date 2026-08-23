@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Qurbani Share | Hamba.com</title>
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/qurbani-share.css">
+
+    <script src="../js/qurbani-share.js" defer></script>
+    <!-- JavaScript -->
+    <script src="../js/auth.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="../index.html" class="logo">
+                Hamba<span>.com</span>
+            </a>
+
+            <div class="nav-links">
+
+                <a href="../index.html">Home</a>
+
+                <a href="beef-sell.html">
+                    Buy Beef
+                </a>
+
+                <a href="qurbani-share.html" class="active">
+                    Qurbani Share
+                </a>
+
+                <a href="live-cows.html">
+                    Live Cows
+                </a>
+
+                <a href="rent-butcher.html">
+                    Rent Butcher
+                </a>
+
+                <a href="live-market.html">
+                    Live Market
+                </a>
+
+                <a href="cow-treatment.html">
+                    Cow Treatment
+                </a>
+
+                <a href="sell-cow.html">
+                    Sell Cow
+                </a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="signup.html" class="signup-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+            <button class="mobile-menu-btn" id="menuToggle">
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="qurbani-hero">
+
+        <div class="qurbani-hero-content">
+
+            <p class="section-tag">
+                QURBANI 2026
+            </p>
+
+            <h1>
+                Share Your Qurbani
+                <span>With Trusted People</span>
+            </h1>
+
+            <p>
+                আপনার কাছাকাছি এলাকার মানুষের সাথে
+                কোরবানির গরুর অংশ নিন।
+                একই গ্রুপের সকল সদস্যকে
+                সর্বোচ্চ ৫ কিলোমিটারের মধ্যে থাকতে হবে।
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+
+    <section class="how-it-works">
+
+        <h2>How Qurbani Share Works</h2>
+
+        <div class="steps-container">
+
+            <div class="step">
+
+                <div class="step-number">
+                    1
+                </div>
+
+                <h3>Select a Cow</h3>
+
+                <p>
+                    আপনার পছন্দের গরু নির্বাচন করুন।
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    2
+                </div>
+
+                <h3>Choose Share Plan</h3>
+
+                <p>
+                    3, 5 অথবা 7 জনের গ্রুপ নির্বাচন করুন।
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    3
+                </div>
+
+                <h3>Verify Location</h3>
+
+                <p>
+                    সকল সদস্যের লোকেশন
+                    5KM এর মধ্যে থাকতে হবে।
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    4
+                </div>
+
+                <h3>Complete Qurbani</h3>
+
+                <p>
+                    গ্রুপ সম্পূর্ণ হলে
+                    আপনার Qurbani confirm হবে।
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AVAILABLE QURBANI GROUPS -->
+
+    <section class="qurbani-section">
+
+        <div class="section-heading">
+
+            <p class="section-tag">
+                AVAILABLE GROUPS
+            </p>
+
+            <h2>
+                Choose Your Qurbani Share
+            </h2>
+
+            <p>
+                আপনার এলাকার কাছাকাছি
+                available group নির্বাচন করুন।
+            </p>
+
+        </div>
+
+
+        <!-- LOCATION BUTTON -->
+
+        <div class="location-box">
+
+            <div>
+
+                <h3>
+                    📍 Your Location
+                </h3>
+
+                <p id="locationStatus">
+                    লোকেশন এখনও নেওয়া হয়নি।
+                </p>
+
+            </div>
+
+
+            <button id="getLocationBtn" class="location-btn">
+
+                Get My Location
+
+            </button>
+
+        </div>
+
+
+        <!-- GROUPS -->
+
+        <div class="qurbani-grid" id="qurbaniGrid">
+
+            <!-- JavaScript দিয়ে আসবে -->
+
+        </div>
+
+    </section>
+
+
+    <!-- JOIN MODAL -->
+
+    <div class="join-modal" id="joinModal">
+
+        <div class="join-modal-box">
+
+            <button class="close-modal" id="closeModal">
+
+                ✕
+
+            </button>
+
+
+            <h2>
+                Join Qurbani Group
+            </h2>
+
+
+            <div id="selectedGroupInfo">
+
+            </div>
+
+
+            <form id="joinForm">
+
+                <div class="form-group">
+
+                    <label>
+                        Your Name
+                    </label>
+
+                    <input type="text" id="memberName" required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Phone Number
+                    </label>
+
+                    <input type="tel" id="memberPhone" required>
+
+                </div>
+
+
+                <div class="location-check">
+
+                    <p id="distanceStatus">
+
+                        আপনার লোকেশন verify করা হবে।
+
+                    </p>
+
+                </div>
+
+
+                <button type="submit" class="join-btn">
+
+                    Join Group
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- SUCCESS MODAL -->
+
+    <div class="success-modal" id="successModal">
+
+        <div class="success-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>
+                Successfully Joined!
+            </h2>
+
+            <p id="successMessage">
+
+            </p>
+
+            <button id="successCloseBtn" class="continue-btn">
+
+                Continue
+
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

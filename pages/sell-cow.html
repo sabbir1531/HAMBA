@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sell Your Cow | Hamba.com</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <link rel="stylesheet" href="../styles/sell-cow.css">
+
+    <script src="../js/sell-cow.js" defer></script>
+    <!-- JavaScript -->
+    <script src="../js/auth.js" defer></script>
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="../index.html" class="logo">
+
+                Hamba<span>.com</span>
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="beef-sell.html">
+                    Buy Beef
+                </a>
+
+                <a href="qurbani-share.html">
+                    Qurbani Share
+                </a>
+
+                <a href="live-cows.html">
+                    Live Cows
+                </a>
+
+                <a href="rent-butcher.html">
+                    Rent Butcher
+                </a>
+
+                <a href="live-market.html">
+                    Live Market
+                </a>
+
+                <a href="cow-treatment.html">
+                    Cow Treatment
+                </a>
+
+                <a href="sell-cow.html" class="active">
+                    Sell Cow
+                </a>
+
+            </div>
+
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="signup.html" class="signup-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+
+            <button class="mobile-menu-btn" id="menuToggle">
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="sell-cow-hero">
+
+        <div class="sell-cow-hero-content">
+
+            <p class="section-tag">
+                SELL YOUR CATTLE
+            </p>
+
+            <h1>
+                Sell Your Cow
+                <span>With Confidence</span>
+            </h1>
+
+            <p>
+                আপনার খামারের গরুর তথ্য দিন এবং হাজারো
+                সম্ভাব্য ক্রেতার কাছে আপনার গরু পৌঁছে দিন।
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SELL FORM ================= -->
+
+    <section class="sell-cow-section">
+
+        <div class="sell-cow-container">
+
+
+            <div class="form-intro">
+
+                <h2>
+                    List Your Cow
+                </h2>
+
+                <p>
+                    নিচের তথ্যগুলো সঠিকভাবে পূরণ করুন।
+                    আপনার গরুটি Live Cows মার্কেটে
+                    প্রদর্শিত হবে।
+                </p>
+
+
+                <div class="seller-benefits">
+
+                    <div class="benefit">
+
+                        <span>✓</span>
+
+                        <p>
+                            সহজে গরু পোস্ট করুন
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <span>✓</span>
+
+                        <p>
+                            হাজারো Buyer এর কাছে পৌঁছান
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <span>✓</span>
+
+                        <p>
+                            সম্পূর্ণ তথ্যসহ Listing
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form id="sellCowForm">
+
+
+                <!-- COW NAME -->
+
+                <div class="form-group">
+
+                    <label>
+                        Cow Name
+                    </label>
+
+                    <input type="text" id="cowName" placeholder="Example: Deshi Red Cow" required>
+
+                </div>
+
+
+                <!-- BREED -->
+
+                <div class="form-group">
+
+                    <label>
+                        Breed
+                    </label>
+
+                    <input type="text" id="cowBreed" placeholder="Example: Sahiwal" required>
+
+                </div>
+
+
+                <div class="form-row">
+
+
+                    <!-- AGE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Age (Years)
+                        </label>
+
+                        <input type="number" id="cowAge" min="1" required>
+
+                    </div>
+
+
+                    <!-- WEIGHT -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Approximate Weight (KG)
+                        </label>
+
+                        <input type="number" id="cowWeight" min="1" required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRICE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Expected Price (৳)
+                    </label>
+
+                    <input type="number" id="cowPrice" min="1" required>
+
+                </div>
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="form-group">
+
+                    <label>
+                        Description
+                    </label>
+
+                    <textarea id="cowDescription" rows="5" placeholder="Write details about your cow..."
+                        required></textarea>
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="form-group">
+
+                    <label>
+                        Farm Location
+                    </label>
+
+                    <input type="text" id="cowLocation" placeholder="Example: Savar, Dhaka" required>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Seller Phone Number
+                    </label>
+
+                    <input type="tel" id="sellerPhone" placeholder="01XXXXXXXXX" required>
+
+                </div>
+
+
+                <!-- IMAGE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Cow Image
+                    </label>
+
+                    <input type="file" id="cowImage" accept="image/*" required>
+
+                    <div class="image-preview" id="imagePreview">
+
+                        <span>
+                            Image Preview
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <button type="submit" class="submit-cow-btn">
+
+                    Publish Cow Listing
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- SUCCESS MODAL -->
+
+    <div class="success-modal" id="successModal">
+
+        <div class="success-box">
+
+            <div class="success-icon">
+
+                ✓
+
+            </div>
+
+            <h2>
+                Cow Listed Successfully!
+            </h2>
+
+            <p id="successMessage">
+
+            </p>
+
+            <a href="live-cows.html" class="view-cows-btn">
+
+                View Live Cows
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

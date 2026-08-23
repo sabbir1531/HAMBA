@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Hamba.com</title>
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/checkout.css">
+
+    <script src="../js/checkout.js" defer></script>
+    <!-- JavaScript -->
+    <script src="../js/auth.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="../index.html" class="logo">
+                Hamba<span>.com</span>
+            </a>
+
+            <div class="nav-links">
+
+                <a href="../index.html">Home</a>
+
+                <a href="beef-sell.html">
+                    Buy Beef
+                </a>
+
+                <a href="qurbani-share.html">
+                    Qurbani Share
+                </a>
+
+                <a href="live-cows.html">
+                    Live Cows
+                </a>
+
+                <a href="rent-butcher.html">
+                    Rent Butcher
+                </a>
+
+                <a href="live-market.html">
+                    Live Market
+                </a>
+
+                <a href="cow-treatment.html">
+                    Cow Treatment
+                </a>
+
+                <a href="sell-cow.html">
+                    Sell Cow
+                </a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="signup.html" class="signup-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+            <button class="mobile-menu-btn" id="menuToggle">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- PAGE HEADER -->
+
+    <section class="checkout-hero">
+
+        <div>
+
+            <p class="section-tag">
+                COMPLETE YOUR ORDER
+            </p>
+
+            <h1>Checkout</h1>
+
+            <p>
+                আপনার অর্ডারের তথ্য নিশ্চিত করুন।
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHECKOUT -->
+
+    <main class="checkout-page">
+
+        <div class="checkout-container">
+
+
+            <!-- CUSTOMER FORM -->
+
+            <section class="customer-section">
+
+                <h2>Delivery Information</h2>
+
+                <form id="checkoutForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>Full Name</label>
+
+                            <input
+                                type="text"
+                                id="customerName"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Phone Number</label>
+
+                            <input
+                                type="tel"
+                                id="customerPhone"
+                                placeholder="01XXXXXXXXX"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Delivery Address</label>
+
+                        <textarea
+                            id="customerAddress"
+                            rows="4"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>City</label>
+
+                            <input
+                                type="text"
+                                id="customerCity"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Area</label>
+
+                            <input
+                                type="text"
+                                id="customerArea"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DELIVERY -->
+
+                    <div class="form-group">
+
+                        <label>Delivery Method</label>
+
+                        <select id="deliveryMethod">
+
+                            <option value="home">
+                                Home Delivery
+                            </option>
+
+                            <option value="pickup">
+                                Farm Pickup
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- PAYMENT -->
+
+                    <div class="form-group">
+
+                        <label>Payment Method</label>
+
+                        <select id="paymentMethod">
+
+                            <option value="cash">
+                                Cash on Delivery
+                            </option>
+
+                            <option value="bkash">
+                                bKash
+                            </option>
+
+                            <option value="card">
+                                Card Payment
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="place-order-btn"
+                    >
+
+                        Place Order
+
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- ORDER SUMMARY -->
+
+            <aside class="order-summary">
+
+                <h2>Your Order</h2>
+
+                <div
+                    id="checkoutItems"
+                    class="checkout-items"
+                >
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>Subtotal</span>
+
+                    <strong id="checkoutSubtotal">
+                        ৳0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>Delivery Charge</span>
+
+                    <strong id="deliveryCharge">
+                        ৳0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-total">
+
+                    <span>Total</span>
+
+                    <strong id="checkoutTotal">
+                        ৳0
+                    </strong>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- SUCCESS MODAL -->
+
+    <div class="order-modal" id="orderModal">
+
+        <div class="order-modal-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>Order Placed Successfully!</h2>
+
+            <p id="orderMessage">
+                Your order has been placed.
+            </p>
+
+            <a
+                href="../index.html"
+                class="continue-btn"
+            >
+                Back to Home
+            </a>
+
+        </div>
+
+    </div>
+     <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>
+                    Hamba<span>.com</span>
+                </h2>
+
+                <p>
+
+                    Your trusted platform for
+                    beef, cattle and Qurbani services.
+
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="pages/beef-sell.html">
+                    Buy Beef
+                </a>
+
+                <a href="pages/qurbani-share.html">
+                    Qurbani Share
+                </a>
+
+                <a href="pages/live-cows.html">
+                    Live Cows
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="pages/about.html">
+                    About Us
+                </a>
+
+                <a href="pages/contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Hamba.com — All Rights Reserved
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

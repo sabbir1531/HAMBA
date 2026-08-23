@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buy Fresh Beef | Hamba.com</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Beef Page CSS -->
+    <link rel="stylesheet" href="../styles/beef-sell.css">
+
+    <!-- JavaScript -->
+    <script src="../js/beef-sell.js" defer></script>
+
+    <!-- JavaScript -->
+    <script src="../js/auth.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="../index.html" class="logo">
+                Hamba<span>.com</span>
+            </a>
+
+            <div class="nav-links">
+
+                <a href="../index.html">Home</a>
+
+                <a href="beef-sell.html" class="active">
+                    Buy Beef
+                </a>
+
+                <a href="qurbani-share.html">
+                    Qurbani Share
+                </a>
+
+                <a href="live-cows.html">
+                    Live Cows
+                </a>
+
+                <a href="rent-butcher.html">
+                    Rent Butcher
+                </a>
+
+                <a href="live-market.html">
+                    Live Market
+                </a>
+
+                <a href="cow-treatment.html">
+                    Cow Treatment
+                </a>
+
+                <a href="sell-cow.html">
+                    Sell Cow
+                </a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="signup.html" class="signup-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+            <button class="mobile-menu-btn" id="menuToggle">
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="../index.html">Home</a>
+        <a href="beef-sell.html">Buy Beef</a>
+        <a href="qurbani-share.html">Qurbani Share</a>
+        <a href="live-cows.html">Live Cows</a>
+        <a href="rent-butcher.html">Rent Butcher</a>
+        <a href="live-market.html">Live Market</a>
+        <a href="cow-treatment.html">Cow Treatment</a>
+        <a href="sell-cow.html">Sell Your Cow</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="beef-hero">
+
+        <div class="beef-hero-content">
+
+            <p class="section-tag">
+                FARM FRESH BEEF
+            </p>
+
+            <h1>
+                Fresh & Premium Quality Beef
+            </h1>
+
+            <p>
+                আপনার প্রয়োজন অনুযায়ী 100 গ্রাম থেকে
+                সর্বোচ্চ 100 কেজি পর্যন্ত তাজা গরুর মাংস অর্ডার করুন।
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCT SECTION ================= -->
+
+    <main class="beef-page">
+
+        <div class="product-section-header">
+
+            <div>
+
+                <p class="section-tag">
+                    OUR PRODUCTS
+                </p>
+
+                <h2>
+                    Choose Your Beef
+                </h2>
+
+            </div>
+
+            <!-- Cart -->
+
+            <button class="cart-button" id="cartButton">
+
+                🛒 Cart
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <!-- ================= PRODUCT GRID ================= -->
+
+        <section class="beef-product-grid">
+
+
+            <!-- Product 1 -->
+
+            <article
+                class="beef-product-card"
+                data-name="Regular Beef"
+                data-price="850"
+                data-image="../assets/images/beef.jpg"
+            >
+
+                <img
+                    src="../assets/images/beef.jpg"
+                    alt="Regular Fresh Beef"
+                >
+
+                <div class="beef-product-info">
+
+                    <h3>
+                        Regular Fresh Beef
+                    </h3>
+
+                    <p>
+                        Freshly processed premium quality beef.
+                    </p>
+
+                    <h4>
+                        ৳850 <span>/ KG</span>
+                    </h4>
+
+
+                    <!-- Quantity -->
+
+                    <div class="quantity-section">
+
+                        <label>
+                            Select Quantity
+                        </label>
+
+                        <div class="quick-quantity">
+
+                            <button data-quantity="0.1">
+                                100g
+                            </button>
+
+                            <button data-quantity="0.25">
+                                250g
+                            </button>
+
+                            <button data-quantity="0.5">
+                                500g
+                            </button>
+
+                            <button data-quantity="1">
+                                1kg
+                            </button>
+
+                        </div>
+
+
+                        <div class="custom-quantity">
+
+                            <input
+                                type="number"
+                                class="quantity-input"
+                                min="0.1"
+                                max="100"
+                                step="0.1"
+                                value="1"
+                            >
+
+                            <span>
+                                KG
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Price -->
+
+                    <div class="price-summary">
+
+                        <span>
+                            Total Price
+                        </span>
+
+                        <strong class="total-price">
+                            ৳850
+                        </strong>
+
+                    </div>
+
+
+                    <button class="add-cart-btn">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 2 -->
+
+            <article
+                class="beef-product-card"
+                data-name="Beef With Bone"
+                data-price="780"
+                data-image="../assets/images/beef-bone.jpg"
+            >
+
+                <img
+                    src="../assets/images/beef-bone.jpg"
+                    alt="Beef With Bone"
+                >
+
+                <div class="beef-product-info">
+
+                    <h3>
+                        Beef With Bone
+                    </h3>
+
+                    <p>
+                        Fresh beef with natural bone cuts.
+                    </p>
+
+                    <h4>
+                        ৳780 <span>/ KG</span>
+                    </h4>
+
+                    <div class="quantity-section">
+
+                        <label>
+                            Select Quantity
+                        </label>
+
+                        <div class="quick-quantity">
+
+                            <button data-quantity="0.1">
+                                100g
+                            </button>
+
+                            <button data-quantity="0.25">
+                                250g
+                            </button>
+
+                            <button data-quantity="0.5">
+                                500g
+                            </button>
+
+                            <button data-quantity="1">
+                                1kg
+                            </button>
+
+                        </div>
+
+                        <div class="custom-quantity">
+
+                            <input
+                                type="number"
+                                class="quantity-input"
+                                min="0.1"
+                                max="100"
+                                step="0.1"
+                                value="1"
+                            >
+
+                            <span>KG</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="price-summary">
+
+                        <span>Total Price</span>
+
+                        <strong class="total-price">
+                            ৳780
+                        </strong>
+
+                    </div>
+
+                    <button class="add-cart-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 3 -->
+
+            <article
+                class="beef-product-card"
+                data-name="Boneless Beef"
+                data-price="1050"
+                data-image="../assets/images/beef-boneless.jpg"
+            >
+
+                <img
+                    src="../assets/images/beef-boneless.jpg"
+                    alt="Boneless Beef"
+                >
+
+                <div class="beef-product-info">
+
+                    <h3>
+                        Premium Boneless Beef
+                    </h3>
+
+                    <p>
+                        Carefully selected premium boneless cuts.
+                    </p>
+
+                    <h4>
+                        ৳1050 <span>/ KG</span>
+                    </h4>
+
+                    <div class="quantity-section">
+
+                        <label>Select Quantity</label>
+
+                        <div class="quick-quantity">
+
+                            <button data-quantity="0.1">100g</button>
+                            <button data-quantity="0.25">250g</button>
+                            <button data-quantity="0.5">500g</button>
+                            <button data-quantity="1">1kg</button>
+
+                        </div>
+
+                        <div class="custom-quantity">
+
+                            <input
+                                type="number"
+                                class="quantity-input"
+                                min="0.1"
+                                max="100"
+                                step="0.1"
+                                value="1"
+                            >
+
+                            <span>KG</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="price-summary">
+
+                        <span>Total Price</span>
+
+                        <strong class="total-price">
+                            ৳1050
+                        </strong>
+
+                    </div>
+
+                    <button class="add-cart-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 4 -->
+
+            <article
+                class="beef-product-card"
+                data-name="Beef Mince"
+                data-price="950"
+                data-image="../assets/images/beef-mince.jpg"
+            >
+
+                <img
+                    src="../assets/images/beef-mince.jpg"
+                    alt="Fresh Beef Mince"
+                >
+
+                <div class="beef-product-info">
+
+                    <h3>
+                        Fresh Beef Mince
+                    </h3>
+
+                    <p>
+                        Freshly ground premium beef mince.
+                    </p>
+
+                    <h4>
+                        ৳950 <span>/ KG</span>
+                    </h4>
+
+                    <div class="quantity-section">
+
+                        <label>Select Quantity</label>
+
+                        <div class="quick-quantity">
+
+                            <button data-quantity="0.1">100g</button>
+                            <button data-quantity="0.25">250g</button>
+                            <button data-quantity="0.5">500g</button>
+                            <button data-quantity="1">1kg</button>
+
+                        </div>
+
+                        <div class="custom-quantity">
+
+                            <input
+                                type="number"
+                                class="quantity-input"
+                                min="0.1"
+                                max="100"
+                                step="0.1"
+                                value="1"
+                            >
+
+                            <span>KG</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="price-summary">
+
+                        <span>Total Price</span>
+
+                        <strong class="total-price">
+                            ৳950
+                        </strong>
+
+                    </div>
+
+                    <button class="add-cart-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= CART SIDEBAR ================= -->
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <button id="closeCart">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <!-- JavaScript দিয়ে Cart Item আসবে -->
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    ৳0
+                </strong>
+
+            </div>
+
+            <button class="checkout-btn">
+
+                Proceed to Checkout
+
+            </button>
+
+        </div>
+
+    </aside>
+     <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>
+                    Hamba<span>.com</span>
+                </h2>
+
+                <p>
+
+                    Your trusted platform for
+                    beef, cattle and Qurbani services.
+
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="pages/beef-sell.html">
+                    Buy Beef
+                </a>
+
+                <a href="pages/qurbani-share.html">
+                    Qurbani Share
+                </a>
+
+                <a href="pages/live-cows.html">
+                    Live Cows
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="pages/about.html">
+                    About Us
+                </a>
+
+                <a href="pages/contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Hamba.com — All Rights Reserved
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

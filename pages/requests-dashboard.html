@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Requests | Hamba.com</title>
+
+    <link
+        rel="stylesheet"
+        href="../styles.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../styles/requests-dashboard.css"
+    >
+
+    <script
+        src="../js/requests-dashboard.js"
+        defer
+    ></script>
+
+     <!-- JavaScript -->
+    <script src="../js/auth.js" defer></script>
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a
+            href="../index.html"
+            class="logo"
+        >
+            Hamba<span>.com</span>
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="live-cows.html">
+                Live Cows
+            </a>
+
+            <a href="sell-cow.html">
+                Sell Cow
+            </a>
+
+            <a
+                href="requests-dashboard.html"
+                class="active"
+            >
+                My Requests
+            </a>
+
+        </div>
+
+
+        <div class="nav-actions">
+
+            <a
+                href="login.html"
+                class="login-btn"
+            >
+                Login
+            </a>
+
+            <a
+                href="signup.html"
+                class="signup-btn"
+            >
+                Sign Up
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HEADER ================= -->
+
+<section class="dashboard-hero">
+
+    <p class="section-tag">
+        HAMBA DASHBOARD
+    </p>
+
+    <h1>
+        Request Management
+    </h1>
+
+    <p>
+        Manage your cow buying and selling requests from one place.
+    </p>
+
+</section>
+
+
+
+<!-- ================= TABS ================= -->
+
+<section class="dashboard-section">
+
+    <div class="dashboard-container">
+
+
+        <div class="dashboard-tabs">
+
+            <button
+                class="dashboard-tab active"
+                data-tab="buyer"
+            >
+
+                📥 My Buy Requests
+
+            </button>
+
+
+            <button
+                class="dashboard-tab"
+                data-tab="seller"
+            >
+
+                🐄 Requests For My Cows
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ================= BUYER REQUESTS ================= -->
+
+        <div
+            class="tab-content active"
+            id="buyerTab"
+        >
+
+            <div class="tab-heading">
+
+                <h2>
+                    My Buy Requests
+                </h2>
+
+                <p>
+                    All cow purchase requests you have submitted.
+                </p>
+
+            </div>
+
+
+            <div
+                class="request-grid"
+                id="buyerRequestGrid"
+            >
+
+            </div>
+
+
+            <div
+                class="empty-request"
+                id="buyerEmpty"
+            >
+
+                <h3>
+                    No Buy Requests Yet
+                </h3>
+
+                <p>
+                    You haven't sent any request yet.
+                </p>
+
+                <a
+                    href="live-cows.html"
+                    class="browse-btn"
+                >
+
+                    Browse Live Cows
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= SELLER REQUESTS ================= -->
+
+        <div
+            class="tab-content"
+            id="sellerTab"
+        >
+
+            <div class="tab-heading">
+
+                <h2>
+                    Requests For My Cows
+                </h2>
+
+                <p>
+                    Manage buyers interested in your cows.
+                </p>
+
+            </div>
+
+
+            <div
+                class="request-grid"
+                id="sellerRequestGrid"
+            >
+
+            </div>
+
+
+            <div
+                class="empty-request"
+                id="sellerEmpty"
+            >
+
+                <h3>
+                    No Requests Yet
+                </h3>
+
+                <p>
+                    Buyers have not sent any requests for your cows yet.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+</body>
+
+</html>

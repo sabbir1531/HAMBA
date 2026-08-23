@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sign Up | Hamba.com</title>
+
+    <!-- Main CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../styles.css"
+    >
+
+    <!-- Signup CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../styles/signup.css"
+    >
+
+    <!-- Signup JS -->
+
+    <script
+        src="../js/signup.js"
+        defer
+    ></script>
+    
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a
+            href="../index.html"
+            class="logo"
+        >
+
+            Hamba<span>.com</span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+
+            <a href="live-cows.html">
+                Live Cows
+            </a>
+
+
+            <a href="sell-cow.html">
+                Sell Cow
+            </a>
+
+
+            <a href="requests-dashboard.html">
+                My Requests
+            </a>
+
+        </div>
+
+
+        <div class="nav-actions">
+
+            <a
+                href="login.html"
+                class="login-btn"
+            >
+
+                Login
+
+            </a>
+
+
+            <a
+                href="signup.html"
+                class="signup-btn active-signup"
+            >
+
+                Sign Up
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= SIGNUP SECTION ================= -->
+
+<section class="signup-page">
+
+
+    <!-- LEFT SIDE -->
+
+    <div class="signup-intro">
+
+        <p class="section-tag">
+
+            JOIN HAMBA
+
+        </p>
+
+
+        <h1>
+
+            Your Trusted
+            <span>
+                Cattle Marketplace
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Create your account to buy fresh beef,
+            purchase live cows, sell cattle and manage
+            your Qurbani services from one platform.
+
+        </p>
+
+
+        <div class="signup-features">
+
+
+            <div class="signup-feature">
+
+                <span>
+                    ✓
+                </span>
+
+                <p>
+                    Buy and sell live cattle
+                </p>
+
+            </div>
+
+
+            <div class="signup-feature">
+
+                <span>
+                    ✓
+                </span>
+
+                <p>
+                    Manage your buying requests
+                </p>
+
+            </div>
+
+
+            <div class="signup-feature">
+
+                <span>
+                    ✓
+                </span>
+
+                <p>
+                    Join Qurbani share groups
+                </p>
+
+            </div>
+
+
+            <div class="signup-feature">
+
+                <span>
+                    ✓
+                </span>
+
+                <p>
+                    Access professional cattle services
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- RIGHT SIDE -->
+
+    <div class="signup-card">
+
+
+        <div class="form-header">
+
+            <h2>
+
+                Create Account
+
+            </h2>
+
+
+            <p>
+
+                Join Hamba.com today
+
+            </p>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <form
+            id="signupForm"
+        >
+
+
+            <!-- FULL NAME -->
+
+            <div class="form-group">
+
+                <label
+                    for="signupName"
+                >
+
+                    Full Name
+
+                </label>
+
+
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label
+                    for="signupEmail"
+                >
+
+                    Email Address
+
+                </label>
+
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- PHONE -->
+
+            <div class="form-group">
+
+                <label
+                    for="signupPhone"
+                >
+
+                    Phone Number
+
+                </label>
+
+
+                <input
+                    type="tel"
+                    id="signupPhone"
+                    placeholder="01XXXXXXXXX"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- PASSWORD -->
+
+            <div class="form-group">
+
+                <label
+                    for="signupPassword"
+                >
+
+                    Password
+
+                </label>
+
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Create a password"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- CONFIRM PASSWORD -->
+
+            <div class="form-group">
+
+                <label
+                    for="confirmPassword"
+                >
+
+                    Confirm Password
+
+                </label>
+
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- ERROR / SUCCESS -->
+
+            <div
+                id="signupMessage"
+                class="form-message"
+            ></div>
+
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                class="signup-submit-btn"
+            >
+
+                Create Account
+
+            </button>
+
+
+        </form>
+
+
+
+        <!-- LOGIN LINK -->
+
+        <div class="login-link">
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Login
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+</body>
+
+</html>
